@@ -24,3 +24,11 @@ default = "~/.ssh/id_rsa"
 variable "user" {
 default = "wguan"
 }
+
+variable "public_key"{
+type=string
+}
+
+variable "private_key"{
+type=string
+}
