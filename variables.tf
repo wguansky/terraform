@@ -17,10 +17,6 @@ variable "instance_type" {
   default = "e2-medium"
 }
 
-variable "public_key" {
-default = "~/.ssh/id_rsa"
-}
-
 variable "user" {
 default = "wguan"
 }
