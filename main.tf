@@ -22,7 +22,7 @@ resource "google_compute_instance" "shadowsocks" {
 
   metadata = {
     foo = "bar"
-    ssh-keys = "
+    ssh-keys =<<EOF
 -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAYEAvb9uzbLGh+++4szt0i/qwhzDBwrQSjz7xfx7sfMWu49H2z75fcqS
@@ -61,7 +61,7 @@ kEMSzwlcWR6w+NXvFK192XHRRWAfwEu9k75VAl0uCXPrrbDmOWAUtH22TiJzG/E5LQ4llX
 pAA0XuK0TO9fJN57Q322GjoJg3PB2TsYN07YjmbgXk0pbPEwkqhUcL0GCNQNEypV+FkGvL
 uzzd0qaWOX6rcAAAAXd2d1YW5ASEFOTTEzNjE1LUEubG9jYWwBAgME
 -----END OPENSSH PRIVATE KEY-----
-"
+EOF
   }
 
 connection  {
